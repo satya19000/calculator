@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#5b7fff" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#4a6ff0" media="(prefers-color-scheme: light)" />
+    <meta name="description" content="CalcVerse — World's smartest AI calculator platform. 500+ free calculators for finance, health, math, science, crypto & more. With step-by-step AI explanations in 20 languages." />
+    <meta name="keywords" content="calculator, EMI calculator, BMI calculator, SIP calculator, compound interest, GST calculator, currency converter, AI calculator, free calculator" />
+    <meta property="og:title" content="CalcVerse — AI Calculator Platform" />
+    <meta property="og:description" content="500+ free calculators with AI explanations, step-by-step solutions, and beautiful charts." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CalcVerse — AI Calculator Platform" />
+    <meta name="twitter:description" content="500+ free calculators with AI explanations in 20 languages." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+    <title>CalcVerse — World's Smartest AI Calculator Platform</title>
+    <script>
+      (function(){
+        try {
+          var t = localStorage.getItem('calcverse-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          if (t === 'dark') document.documentElement.classList.add('dark');
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
